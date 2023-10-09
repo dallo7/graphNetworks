@@ -108,4 +108,4 @@ neighbor_map = net.get_adj_list()
 for node in net.nodes:
     node["title"] += "\n".join(neighbor_map[node["id"]])
     node["value"] = len(neighbor_map[node["id"]])
-net.show("us.html", notebook=False)
+app = net.show("us.html", notebook=False)
